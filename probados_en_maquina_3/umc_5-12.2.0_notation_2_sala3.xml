@@ -21,19 +21,22 @@
         <index>0x6089</index>
         <subindex>0</subindex>
         <size>1</size>
-        <value>-2</value><!--- -->
+        <value>-2</value>
+        <!--- -->
     </param>
     <param name="Velocity notation index">
         <index>0x608B</index>
         <subindex>0</subindex>
         <size>1</size>
-        <value>-2</value><!--- -->
+        <value>-2</value>
+        <!--- -->
     </param>
     <param name="Acceleration notation index">
         <index>0x608D</index>
         <subindex>0</subindex>
         <size>1</size>
-        <value>-2</value><!--- -->
+        <value>-2</value>
+        <!--- -->
     </param>
     <param name="Gear ratio numerator">
         <index>0x6091</index>
@@ -63,43 +66,50 @@
         <index>0x607F</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>3090</value><!--- -->
+        <value>3090</value>
+        <!--- -->
     </param>
     <param name="Max acceleration">
         <index>0x60C5</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>1500</value><!--- -->
+        <value>1500</value>
+        <!--- -->
     </param>
     <param name="Max deceleration">
         <index>0x60C6</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>1500</value><!--- -->
+        <value>1500</value>
+        <!--- -->
     </param>
     <param name="Profile velocity">
         <index>0x6081</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>3000</value><!--- -->
+        <value>3000</value>
+        <!--- -->
     </param>
     <param name="Profile acceleration">
         <index>0x6083</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>1500</value><!--- -->
+        <value>1500</value>
+        <!--- -->
     </param>
     <param name="Profile deceleration">
         <index>0x6084</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>1500</value><!--- -->
+        <value>1500</value>
+        <!--- -->
     </param>
     <param name="Quick stop deceleration">
         <index>0x6085</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>1500</value><!--- -->
+        <value>1500</value>
+        <!--- -->
     </param>
     <param name="Quick stop option">
         <index>0x605A</index>
@@ -117,25 +127,29 @@
         <index>0x607D</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>-18000</value><!--- -->
+        <!--- -->
+        <value>-18000</value>
     </param>
     <param name="Software position limit Max">
         <index>0x607D</index>
         <subindex>2</subindex>
         <size>4</size>
-        <value>18000</value><!--- -->
+        <!--- -->
+        <value>18000</value>
     </param>
     <param name="Outofbound_position_limit_min">
         <index>0xFF30</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>-19000</value><!--- -->
+        <!--- -->
+        <value>-19000</value>
     </param>
     <param name="Outofbound_position_limit_max">
         <index>0xFF30</index>
         <subindex>2</subindex>
         <size>4</size>
-        <value>19000</value><!--- -->
+        <!--- -->
+        <value>19000</value>
     </param>
     <param name="Max motor speed">
         <index>0x6080</index>
@@ -177,7 +191,8 @@
         <index>0x6067</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>10</value><!--- -->
+        <value>10</value>
+        <!--- -->
     </param>
     <param name="Position window time">
         <index>0x6068</index>
@@ -189,7 +204,8 @@
         <index>0x606D</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>200</value><!--- -->
+        <value>200</value>
+        <!--- -->
     </param>
     <param name="Velocity window time">
         <index>0x606E</index>
@@ -201,7 +217,8 @@
         <index>0x606F</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>1000</value><!--- -->
+        <value>1000</value>
+        <!--- -->
     </param>
     <param name="Velocity threshold time">
         <index>0x6070</index>
@@ -213,13 +230,15 @@
         <index>0x60F8</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>3000</value><!--- -->
+        <value>3000</value>
+        <!--- -->
     </param>
     <param name="AN1 gain numerator">
         <index>0x2203</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>-11070</value> <!--- -->
+        <!--- -->
+        <value>-11010</value>
     </param>
     <param name="AN1 gain divisor">
         <index>0x2203</index>
@@ -231,7 +250,8 @@
         <index>0x2203</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>22480</value> <!--- -->
+        <!--- -->
+        <value>21740</value>
     </param>
     <param name="AN2 gain numerator">
         <index>0x2204</index>
@@ -477,7 +497,7 @@
         <index>0x6085</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>500</value>
+        <value>1500</value>
     </param>
     <param name="Quick stop mode change time">
         <index>0x6085</index>
@@ -507,25 +527,29 @@
         <index>0x2110</index>
         <subindex>2</subindex>
         <size>4</size>
-        <value>9000</value><!-- -->
+        <value>9000</value>
+        <!-- -->
     </param>
     <param name="Detent position 3">
         <index>0x2110</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>-9000</value> <!-- -->
+        <value>-9000</value>
+        <!-- -->
     </param>
     <param name="Detent distance">
         <index>0x2111</index>
         <subindex>4</subindex>
         <size>4</size>
-        <value>400</value> <!-- -->
+        <value>400</value>
+        <!-- -->
     </param>
     <param name="Detent skip speed">
         <index>0x2111</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>2000</value> <!-- -->
+        <value>2000</value>
+        <!-- -->
     </param>
     <param name="Detent PWM">
         <index>0x2111</index>
@@ -972,7 +996,6 @@
         <size>2</size>
         <value>1000</value>
     </param>
-
     <!--- Position Manual Detent PID -->
     <param name="Velocity Manual Detent Kp">
         <index>0xFF48</index>
@@ -984,7 +1007,7 @@
         <index>0xFF48</index>
         <subindex>2</subindex>
         <size>2</size>
-        <value>15000</value>
+        <value>50000</value>
     </param>
     <param name="Velocity Manual Detent Kd">
         <index>0xFF48</index>
@@ -996,7 +1019,7 @@
         <index>0xFF48</index>
         <subindex>4</subindex>
         <size>2</size>
-        <value>8000</value>
+        <value>100000</value>
     </param>
     <param name="Velocity Manual Detent control parameter divisor">
         <index>0xFF48</index>
@@ -1004,8 +1027,6 @@
         <size>2</size>
         <value>1000</value>
     </param>
-
-
     <param name="Percent OverCurrent following error window">
         <index>0xFF45</index>
         <subindex>1</subindex>
