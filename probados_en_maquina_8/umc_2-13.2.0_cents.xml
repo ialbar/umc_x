@@ -8,7 +8,7 @@
     <param name="Power board">
         <index>0x2230</index>
         <subindex>0</subindex>
-        <size>1</size>  
+        <size>1</size>
         <value>5</value>
     </param>
     <param name="Position dimension index">
@@ -16,7 +16,7 @@
         <subindex>0</subindex>
         <size>1</size>
         <value>65</value>
-        <!--- ï¿½ grados -->
+        <!--- º grados -->
     </param>
     <param name="Position notation index">
         <index>0x6089</index>
@@ -128,25 +128,25 @@
         <index>0x607D</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>-18000</value>
+        <value>-1800</value>
     </param>
     <param name="Software position limit Max">
         <index>0x607D</index>
         <subindex>2</subindex>
         <size>4</size>
-        <value>13500</value>
+        <value>1350</value>
     </param>
     <param name="Outofbound_position_limit_min">
         <index>0xFF30</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>-19000</value>
+        <value>-1900</value>
     </param>
     <param name="Outofbound_position_limit_max">
         <index>0xFF30</index>
         <subindex>2</subindex>
         <size>4</size>
-        <value>14500</value>
+        <value>1450</value>
     </param>
     <param name="Max motor speed">
         <index>0x6080</index>
@@ -192,14 +192,14 @@
         <index>0x6067</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>5</value>
+        <value>10</value>
         <!--- -->
     </param>
     <param name="Position window time">
         <index>0x6068</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>100</value>
+        <value>1</value>
     </param>
     <param name="Velocity window">
         <index>0x606D</index>
@@ -240,7 +240,7 @@
         <index>0x2203</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>2380</value>
+        <value>2406</value>
     </param>
     <param name="AN1 gain divisor">
         <index>0x2203</index>
@@ -252,7 +252,7 @@
         <index>0x2203</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>-3759</value>
+        <value>-3833</value>
     </param>
     <param name="AN2 gain numerator">
         <index>0x2204</index>
@@ -498,13 +498,13 @@
         <index>0x6085</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>0</value>
+        <value>2500</value>
     </param>
     <param name="Quick stop mode change time">
         <index>0x6085</index>
         <subindex>4</subindex>
         <size>2</size>
-        <value>1</value>
+        <value>50</value>
     </param>
     <param name="GPI polarity">
         <index>0x2201</index>
@@ -545,34 +545,18 @@
         <value>-18000</value>
         <!--- -->
     </param>
-    <param name="Detent input distance">
+    <param name="Detent distance">
         <index>0x2111</index>
         <subindex>4</subindex>
         <size>4</size>
-        <value>5</value>
-        <!--- 360 -->
+        <value>50</value>
+        <!--- -->
     </param>
-
-   <param name="Detent output distance">
-        <index>0x2111</index>
-        <subindex>8</subindex>
-        <size>4</size>
-        <value>300</value>
-        <!--- 360 -->
-    </param>
- 
-   <param name="Detents_Position_Window_factor_change_Ki">
-        <index>0x2111</index>
-        <subindex>9</subindex>
-        <size>4</size>
-        <value>4</value> 
-    </param>
- 
     <param name="Detent skip speed">
         <index>0x2111</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>2500</value>
+        <value>20000</value>
         <!--- -->
     </param>
     <param name="Detent PWM">
@@ -646,7 +630,7 @@
         <subindex>4</subindex>
         <size>4</size>
         <!--1219 sala 3 -->
-        <value>41</value>
+        <value>1</value>
     </param>
     <param name="AnalogHybrid_Gain_num">
         <index>0xFF21</index>
@@ -665,8 +649,8 @@
         <index>0xFF21</index>
         <subindex>7</subindex>
         <size>4</size>
+        <value>22042</value>
         <!--22533 sala 3 -->
-        <value>21899</value>
     </param>
     <param name="Hybrid_n_turns">
         <index>0xFF21</index>
@@ -787,21 +771,21 @@
         <subindex>2</subindex>
         <size>2</size>
         <value>250</value>
-        <!--250-->
+        <!--250--->
     </param>
     <param name="Position Velocity Ki 0">
         <index>0xFF3C</index>
         <subindex>3</subindex>
         <size>2</size>
         <value>8000</value>
-        <!--3000-->
+        <!--3000--->
     </param>
     <param name="Position Velocity Kd 0">
         <index>0xFF3C</index>
         <subindex>4</subindex>
         <size>2</size>
         <value>0</value>
-        <!--10-->
+        <!--10--->
     </param>
     <param name="Position Velocity Kc 0">
         <index>0xFF3C</index>
@@ -821,13 +805,13 @@
         <index>0xFF3E</index>
         <subindex>2</subindex>
         <size>2</size>
-        <value>5500</value> <!-- 1500 -->
+        <value>1500</value>
     </param>
     <param name="Position Current Ki 0">
         <index>0xFF3E</index>
         <subindex>3</subindex>
         <size>2</size>
-        <value>400</value> <!-- 130 -->
+        <value>130</value>
     </param>
     <param name="Position Current Kd 0">
         <index>0xFF3E</index>
@@ -995,62 +979,62 @@
     </param>
     <!--- Position Manual Detent PID -->
     <param name="Position Manual Detent Kp">
-        <index>0xFF4E</index>
+        <index>0xFF47</index>
         <subindex>1</subindex>
         <size>2</size>
         <value>10000</value>
     </param>
     <param name="Position Manual Detent Ki">
-        <index>0xFF4E</index>
+        <index>0xFF47</index>
         <subindex>2</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Position Manual Detent Kd">
-        <index>0xFF4E</index>
+        <index>0xFF47</index>
         <subindex>3</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Position Manual Detent Kc">
-        <index>0xFF4E</index>
+        <index>0xFF47</index>
         <subindex>4</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Position Manual Detent control parameter divisor">
-        <index>0xFF4E</index>
+        <index>0xFF47</index>
         <subindex>5</subindex>
         <size>2</size>
         <value>1000</value>
     </param>
     <!--- Position Manual Detent PID -->
     <param name="Velocity Manual Detent Kp">
-        <index>0xFF4F</index>
+        <index>0xFF48</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>500</value>
+        <value>2000</value>
     </param>
     <param name="Velocity Manual Detent Ki">
-        <index>0xFF4F</index>
+        <index>0xFF48</index>
         <subindex>2</subindex>
         <size>2</size>
-        <value>10000</value>
+        <value>15000</value>
     </param>
     <param name="Velocity Manual Detent Kd">
-        <index>0xFF4F</index>
+        <index>0xFF48</index>
         <subindex>3</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Velocity Manual Detent Kc">
-        <index>0xFF4F</index>
+        <index>0xFF48</index>
         <subindex>4</subindex>
         <size>2</size>
-        <value>20000</value> 
+        <value>20000</value>
     </param>
     <param name="Velocity Manual Detent control parameter divisor">
-        <index>0xFF4F</index>
+        <index>0xFF48</index>
         <subindex>5</subindex>
         <size>2</size>
         <value>1000</value>
@@ -1069,63 +1053,5 @@
         <subindex>2</subindex>
         <size>2</size>
         <value>2000</value>
-    </param>
-
-    <!--- New redundancy -->
-    <param name="New redundancy enable">
-        <index>0xFF4D</index>
-        <subindex>1</subindex>
-        <size>1</size>
-        <value>0</value>
-    </param>
-    <param name="New redundancy window">
-        <index>0xFF4D</index>
-        <subindex>2</subindex>
-        <size>4</size>
-        <value>300</value>
-    </param>
-    <param name="New redundancy timeout">
-        <index>0xFF4D</index>
-        <subindex>3</subindex>
-        <size>4</size>
-        <value>100</value>
-    </param>
-
-   <!--- Used for position -->
-    <param name="AN1 used for position">
-        <index>0xFF47</index>
-        <subindex>1</subindex>
-        <size>1</size>
-        <value>1</value>
-    </param>
-    <param name="AN1 place">
-        <index>0xFF47</index>
-        <subindex>3</subindex>
-        <size>1</size>
-        <value>3</value>
-    </param>
-    <param name="Enc1 used for position">
-        <index>0xFF49</index>
-        <subindex>1</subindex>
-        <size>1</size>
-        <value>1</value>
-    </param>
-    <param name="Enc1 place">
-        <index>0xFF49</index>
-        <subindex>3</subindex>
-        <size>1</size>
-        <value>1</value>
-    </param>
-    <param name="NCE used for position">
-        <index>0xFF4B</index>
-        <subindex>1</subindex>
-        <size>1</size>
-        <value>1</value>
-    </param>
-    <param name="NCE place">
-        <index>0xFF4B</index>
-        <subindex>3</subindex>
-        <size>1</size>
-        <value>3</value>
     </param>
 </Configuration>
