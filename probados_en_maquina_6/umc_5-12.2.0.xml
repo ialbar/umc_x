@@ -497,7 +497,7 @@
         <index>0x6085</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>1500</value>
+        <value>2500</value>
     </param>
     <param name="Quick stop mode change time">
         <index>0x6085</index>

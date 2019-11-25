@@ -498,7 +498,7 @@
         <index>0x6085</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>1500</value> 
+        <value>3000</value> 
     </param>
     <param name="Quick stop mode change time">
         <index>0x6085</index>
@@ -977,68 +977,70 @@
         <size>2</size>
         <value>1000</value>
     </param>
+
     <!--- Position Manual Detent PID -->
     <param name="Position Manual Detent Kp">
-        <index>0xFF47</index>
+        <index>0xFF4E</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>10000</value>
+        <value>15000</value>
     </param>
     <param name="Position Manual Detent Ki">
-        <index>0xFF47</index>
+        <index>0xFF4E</index>
         <subindex>2</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Position Manual Detent Kd">
-        <index>0xFF47</index>
+        <index>0xFF4E</index>
         <subindex>3</subindex>
         <size>2</size>
         <value>0</value>
     </param>
-    <param name="Position Manual Detent Kc">
-        <index>0xFF47</index>
+    <param name="Position Manual Detent Kc"> 
+        <index>0xFF4E</index>
         <subindex>4</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Position Manual Detent control parameter divisor">
-        <index>0xFF47</index>
+        <index>0xFF4E</index>
         <subindex>5</subindex>
         <size>2</size>
-        <value>1000</value>
+        <value>1000</value> 
     </param>
     <!--- Position Manual Detent PID -->
     <param name="Velocity Manual Detent Kp">
-        <index>0xFF48</index>
+        <index>0xFF4F</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>2500</value>
+        <value>750</value>
     </param>
     <param name="Velocity Manual Detent Ki">
-        <index>0xFF48</index>
+        <index>0xFF4F</index>
         <subindex>2</subindex>
         <size>2</size>
-        <value>8000</value>
+        <value>10000</value>
     </param>
     <param name="Velocity Manual Detent Kd">
-        <index>0xFF48</index>
+        <index>0xFF4F</index>
         <subindex>3</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Velocity Manual Detent Kc">
-        <index>0xFF48</index>
+        <index>0xFF4F</index>
         <subindex>4</subindex>
         <size>2</size>
-        <value>15000</value>
+        <value>60000</value>
     </param>
     <param name="Velocity Manual Detent control parameter divisor">
-        <index>0xFF48</index>
+        <index>0xFF4F</index>
         <subindex>5</subindex>
         <size>2</size>
         <value>1000</value>
     </param>
+
     <!--- Manual Detent PID -->
     <!--- Velocity Detent PID -->
     <!--- Velocity Detent PID -->
@@ -1054,4 +1056,51 @@
         <size>2</size>
         <value>2000</value>
     </param>
+
+    <!--- New redundancy -->
+    <param name="New redundancy enable">
+        <index>0xFF4D</index>
+        <subindex>1</subindex>
+        <size>1</size>
+        <value>0</value>
+    </param>
+        <param name="New redundancy window">
+        <index>0xFF4D</index>
+        <subindex>2</subindex>
+        <size>4</size>
+        <value>500</value>
+    </param>
+    <param name="New redundancy timeout">
+        <index>0xFF4D</index>
+        <subindex>3</subindex>
+        <size>4</size>
+        <value>500</value>
+    </param>
+    <!--- Used for position -->
+    <param name="AN1 used for position">
+        <index>0xFF47</index>
+        <subindex>1</subindex>
+        <size>1</size>
+        <value>1</value>
+    </param>
+    <param name="AN1 place">
+        <index>0xFF47</index>
+        <subindex>3</subindex>
+        <size>1</size>
+        <value>3</value>
+    </param>
+    <param name="Enc1 used for position">
+        <index>0xFF49</index>
+        <subindex>1</subindex>
+        <size>1</size>
+        <value>1</value>
+    </param>
+    <param name="Enc1 place">
+        <index>0xFF49</index>
+        <subindex>3</subindex>
+        <size>1</size>
+        <value>1</value>
+    </param>
+
+
 </Configuration>
