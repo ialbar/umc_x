@@ -567,6 +567,14 @@
         <size>4</size>
         <value>4</value> 
     </param>
+
+
+    <param name="Detents_Position_Window_factor_change_Ki_window_time">
+        <index>0x2111</index>
+        <subindex>12</subindex>
+        <size>2</size>
+        <value>300</value> 
+    </param>
  
     <param name="Detent skip speed">
         <index>0x2111</index>
@@ -575,6 +583,21 @@
         <value>2500</value>
         <!--- -->
     </param>
+
+    <param name="Position Detent window">
+        <index>0x2111</index>
+        <subindex>10</subindex>
+        <size>2</size>
+        <value>5</value>
+        <!--- -->
+    </param>
+    <param name="Position Detent window time">
+        <index>0x2111</index>
+        <subindex>11</subindex>
+        <size>2</size>
+        <value>100</value>
+    </param>
+
     <param name="Detent PWM">
         <index>0x2111</index>
         <subindex>5</subindex>
@@ -821,13 +844,13 @@
         <index>0xFF3E</index>
         <subindex>2</subindex>
         <size>2</size>
-        <value>5500</value> <!-- 1500 -->
+        <value>1500</value> <!-- 1500 -->
     </param>
     <param name="Position Current Ki 0">
         <index>0xFF3E</index>
         <subindex>3</subindex>
         <size>2</size>
-        <value>400</value> <!-- 130 -->
+        <value>130</value> <!-- 130 -->
     </param>
     <param name="Position Current Kd 0">
         <index>0xFF3E</index>
@@ -1055,6 +1078,40 @@
         <size>2</size>
         <value>1000</value>
     </param>
+
+    <!--- Position Manual Detent PID -->
+    <param name="Current Manual Detent Kp">
+        <index>0xFF50</index>
+        <subindex>1</subindex>
+        <size>2</size>
+        <value>5500</value>
+    </param>
+    <param name="Current Manual Detent Ki">
+        <index>0xFF50</index>
+        <subindex>2</subindex>
+        <size>2</size>
+        <value>400</value>
+    </param>
+    <param name="Current Manual Detent Kd">
+        <index>0xFF50</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Current Manual Detent Kc">
+        <index>0xFF50</index>
+        <subindex>4</subindex>
+        <size>2</size>
+        <value>0</value> 
+    </param>
+    <param name="Current Manual Detent control parameter divisor">
+        <index>0xFF50</index>
+        <subindex>5</subindex>
+        <size>2</size>
+        <value>1000</value>
+    </param>
+
+
     <!--- Manual Detent PID -->
     <!--- Velocity Detent PID -->
     <!--- Velocity Detent PID -->
