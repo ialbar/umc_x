@@ -108,7 +108,7 @@
         <index>0x6085</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>1500</value>
+        <value>4500</value>
         <!--- -->
     </param>
     <param name="Quick stop option">
@@ -127,28 +127,24 @@
         <index>0x607D</index>
         <subindex>1</subindex>
         <size>4</size>
-        <!--- -->
         <value>-18000</value>
     </param>
     <param name="Software position limit Max">
         <index>0x607D</index>
         <subindex>2</subindex>
         <size>4</size>
-        <!--- -->
         <value>18000</value>
     </param>
     <param name="Outofbound_position_limit_min">
         <index>0xFF30</index>
         <subindex>1</subindex>
         <size>4</size>
-        <!--- -->
         <value>-19000</value>
     </param>
     <param name="Outofbound_position_limit_max">
         <index>0xFF30</index>
         <subindex>2</subindex>
         <size>4</size>
-        <!--- -->
         <value>19000</value>
     </param>
     <param name="Max motor speed">
@@ -238,7 +234,7 @@
         <subindex>1</subindex>
         <size>2</size>
         <!--- -->
-        <value>-11010</value>
+        <value>23680</value>
     </param>
     <param name="AN1 gain divisor">
         <index>0x2203</index>
@@ -251,7 +247,7 @@
         <subindex>3</subindex>
         <size>4</size>
         <!--- -->
-        <value>21740</value>
+        <value>-33410</value>
     </param>
     <param name="AN2 gain numerator">
         <index>0x2204</index>
@@ -541,7 +537,7 @@
         <index>0x2111</index>
         <subindex>4</subindex>
         <size>4</size>
-        <value>5</value>
+        <value>3</value>
         <!-- -->
     </param>
 
@@ -549,7 +545,7 @@
         <index>0x2111</index>
         <subindex>8</subindex>
         <size>4</size>
-        <value>300</value>
+        <value>100</value>
     </param>
 
    <param name="Detents_Position_Window_factor_change_Ki">
@@ -570,7 +566,7 @@
         <index>0x2111</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>2500</value>
+        <value>1250</value>
         <!-- -->
     </param>
 
@@ -578,7 +574,7 @@
         <index>0x2111</index>
         <subindex>10</subindex>
         <size>2</size>
-        <value>5</value>
+        <value>50</value>
         <!--- -->
     </param>
     <param name="Position Detent window time">
@@ -1005,69 +1001,69 @@
     <!--- Velocity Detent PID -->
     <!--- Position Manual Detent PID -->
     <param name="Position Manual Detent Kp">
-        <index>0xFF47</index>
+        <index>0xFF4E</index>
         <subindex>1</subindex>
         <size>2</size>
         <value>10000</value>
     </param>
     <param name="Position Manual Detent Ki">
-        <index>0xFF47</index>
+        <index>0xFF4E</index>
         <subindex>2</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Position Manual Detent Kd">
-        <index>0xFF47</index>
+        <index>0xFF4E</index>
         <subindex>3</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Position Manual Detent Kc">
-        <index>0xFF47</index>
+        <index>0xFF4E</index>
         <subindex>4</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Position Manual Detent control parameter divisor">
-        <index>0xFF47</index>
+        <index>0xFF4E</index>
         <subindex>5</subindex>
         <size>2</size>
         <value>1000</value>
     </param>
-    <!--- Position Manual Detent PID -->
+    <!--- Velocity Manual Detent PID -->
     <param name="Velocity Manual Detent Kp">
-        <index>0xFF48</index>
+        <index>0xFF4F</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>30000</value>
+        <value>500</value>
     </param>
     <param name="Velocity Manual Detent Ki">
-        <index>0xFF48</index>
+        <index>0xFF4F</index>
         <subindex>2</subindex>
         <size>2</size>
-        <value>50000</value>
+        <value>600</value>
     </param>
     <param name="Velocity Manual Detent Kd">
-        <index>0xFF48</index>
+        <index>0xFF4F</index>
         <subindex>3</subindex>
         <size>2</size>
         <value>0</value>
     </param>
     <param name="Velocity Manual Detent Kc">
-        <index>0xFF48</index>
+        <index>0xFF4F</index>
         <subindex>4</subindex>
         <size>2</size>
-        <value>100000</value>
+        <value>600</value>
     </param>
 
     <param name="Velocity Manual Detent control parameter divisor">
-        <index>0xFF48</index>
+        <index>0xFF4F</index>
         <subindex>5</subindex>
         <size>2</size>
         <value>1000</value>
     </param>
 
-    <!--- Position Manual Detent PID -->
+    <!--- Current Manual Detent PID -->
     <param name="Current Manual Detent Kp">
         <index>0xFF50</index>
         <subindex>1</subindex>
