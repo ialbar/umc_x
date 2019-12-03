@@ -240,7 +240,7 @@
         <index>0x2203</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>2380</value>
+        <value>23800</value>
     </param>
     <param name="AN1 gain divisor">
         <index>0x2203</index>
@@ -252,7 +252,7 @@
         <index>0x2203</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>-3759</value>
+        <value>-37590</value>
     </param>
     <param name="AN2 gain numerator">
         <index>0x2204</index>
