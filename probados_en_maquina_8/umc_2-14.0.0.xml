@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Configuration>
     <Configuration_Management>
-        <Revision>13.2.0</Revision>
-        <Revision_Date>2019/07/09 14:00:00</Revision_Date>
-        <Last_modification>2019/07/09 14:00:00</Last_modification>
+        <Revision>14.0.0</Revision>
+        <Revision_Date>2019/12/03 14:00:00</Revision_Date>
+        <Last_modification>2019/12/03 14:00:00</Last_modification>
     </Configuration_Management>
     <param name="Power board">
         <index>0x2230</index>
