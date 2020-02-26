@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Configuration>
     <Configuration_Management>
-        <Revision>12.2.0</Revision>
-        <Revision_Date>2019/09/04 8:00:00</Revision_Date>
-        <Last_modification>2019/09/04 8:00:00</Last_modification>
+        <Revision>12.3.0</Revision>
+        <Revision_Date>2020/01/27 8:00:00</Revision_Date>
+        <Last_modification>2020/01/27 8:00:00</Last_modification>
     </Configuration_Management>
     <param name="Power board">
         <index>0x2230</index>
@@ -219,7 +219,7 @@
         <index>0x2203</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>-954</value>
+        <value>-957</value>
     </param>
     <param name="AN1 gain divisor">
         <index>0x2203</index>
@@ -231,7 +231,7 @@
         <index>0x2203</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>2834</value>
+        <value>1930</value>
     </param>
     <param name="AN2 gain numerator">
         <index>0x2204</index>
@@ -321,7 +321,7 @@
         <index>0x2221</index>
         <subindex>1</subindex>
         <size>1</size>
-        <value>3</value>
+        <value>10</value>
     </param>
     <param name="Position sensor place">
         <index>0x2221</index>
@@ -333,7 +333,7 @@
         <index>0x2222</index>
         <subindex>1</subindex>
         <size>1</size>
-        <value>3</value>
+        <value>10</value>
     </param>
     <param name="Absolute position sensor place">
         <index>0x2222</index>
@@ -515,17 +515,48 @@
         <size>4</size>
         <value>-900</value>
     </param>
-    <param name="Detent distance">
+    <param name="Detent input distance">
         <index>0x2111</index>
         <subindex>4</subindex>
         <size>4</size>
-        <value>10</value>
+        <value>3</value>
+    </param>
+    <param name="Detent output distance">
+        <index>0x2111</index>
+        <subindex>8</subindex>
+        <size>4</size>
+        <value>100</value>
+    </param>
+    <param name="Detents_Position_Window_factor_change_Ki"> 
+        <index>0x2111</index>
+        <subindex>9</subindex>
+        <size>4</size>
+        <value>4</value>
+    </param>
+    <param name="Detents_Position_Window_factor_change_Ki_window_time">
+        <index>0x2111</index>
+        <subindex>12</subindex>
+        <size>2</size>
+        <value>300</value>
     </param>
     <param name="Detent skip speed">
         <index>0x2111</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>2000</value>
+        <value>200</value>   
+    </param>
+    <param name="Position Detent window">
+        <index>0x2111</index>
+        <subindex>10</subindex>
+        <size>2</size>
+        <value>5</value> 
+        <!--- -->
+    </param>
+    <param name="Position Detent window time">
+        <index>0x2111</index>
+        <subindex>11</subindex>
+        <size>2</size>
+        <value>100</value>
     </param>
     <param name="Detent PWM">
         <index>0x2111</index>
@@ -591,19 +622,19 @@
         <index>0xFF21</index>
         <subindex>3</subindex>
         <size>1</size>
-        <value>0</value>
+        <value>1</value>
     </param>
     <param name="AnalogNCE_Offset">
         <index>0xFF21</index>
         <subindex>4</subindex>
         <size>4</size>
-        <value>0</value>
+        <value>3297</value>
     </param>
     <param name="AnalogHybrid_Gain_num">
         <index>0xFF21</index>
         <subindex>5</subindex>
         <size>2</size>
-        <value>2313</value>
+        <value>480</value>
     </param>
     <param name="AnalogHybrid_Gain_div">
         <index>0xFF21</index>
@@ -615,13 +646,13 @@
         <index>0xFF21</index>
         <subindex>7</subindex>
         <size>4</size>
-        <value>0</value>
+        <value>42230</value>
     </param>
     <param name="Hybrid_n_turns">
         <index>0xFF21</index>
         <subindex>8</subindex>
         <size>1</size>
-        <value>10</value>
+        <value>20</value>
     </param>
     <param name="Hybrid_analog_sel">
         <index>0xFF21</index>
@@ -941,6 +972,99 @@
     <!--- Manual Detent PID -->
     <!--- Velocity Detent PID -->
     <!--- Velocity Detent PID -->
+    <!--- Position Manual Detent PID -->
+    <param name="Position Manual Detent Kp">
+        <index>0xFF4E</index>
+        <subindex>1</subindex>
+        <size>2</size>
+        <value>50000</value>
+    </param>
+    <param name="Position Manual Detent Ki">
+        <index>0xFF4E</index>
+        <subindex>2</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Position Manual Detent Kd">
+        <index>0xFF4E</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Position Manual Detent Kc">
+        <index>0xFF4E</index>
+        <subindex>4</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Position Manual Detent control parameter divisor">
+        <index>0xFF4E</index>
+        <subindex>5</subindex>
+        <size>2</size>
+        <value>1000</value>
+    </param>
+    <!--- Velocity Manual Detent PID -->
+    <param name="Velocity Manual Detent Kp">
+        <index>0xFF4F</index>
+        <subindex>1</subindex>
+        <size>2</size>
+        <value>3800</value>
+    </param>
+    <param name="Velocity Manual Detent Ki">
+        <index>0xFF4F</index>
+        <subindex>2</subindex>
+        <size>2</size>
+        <value>25000</value>
+    </param>
+    <param name="Velocity Manual Detent Kd">
+        <index>0xFF4F</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Velocity Manual Detent Kc">
+        <index>0xFF4F</index>
+        <subindex>4</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Velocity Manual Detent control parameter divisor">
+        <index>0xFF4F</index>
+        <subindex>5</subindex>
+        <size>2</size>
+        <value>1000</value>
+    </param>
+    <!--- Current Manual Detent PID -->
+    <param name="Current Manual Detent Kp">
+        <index>0xFF50</index>
+        <subindex>1</subindex>
+        <size>2</size>
+        <value>600</value>
+    </param>
+    <param name="Current Manual Detent Ki">
+        <index>0xFF50</index>
+        <subindex>2</subindex>
+        <size>2</size>
+        <value>20</value>
+    </param>
+    <param name="Current Manual Detent Kd">
+        <index>0xFF50</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Current Manual Detent Kc">
+        <index>0xFF50</index>
+        <subindex>4</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Current Manual Detent control parameter divisor">
+        <index>0xFF50</index>
+        <subindex>5</subindex>
+        <size>2</size>
+        <value>1000</value>
+    </param>
     <param name="Percent OverCurrent following error window">
         <index>0xFF45</index>
         <subindex>1</subindex>
@@ -958,7 +1082,7 @@
         <index>0xFF4D</index>
         <subindex>1</subindex>
         <size>1</size>
-        <value>1</value>
+        <value>0</value>
     </param>
     <param name="New redundancy window">
         <index>0xFF4D</index>
