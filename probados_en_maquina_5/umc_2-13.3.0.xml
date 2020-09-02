@@ -219,7 +219,7 @@
         <index>0x2203</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>2432</value>
+        <value>2387</value>
     </param>
     <param name="AN1 gain divisor">
         <index>0x2203</index>
@@ -231,7 +231,7 @@
         <index>0x2203</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>-4920</value>
+        <value>-4932</value>
     </param>
     <param name="AN2 gain numerator">
         <index>0x2204</index>
@@ -603,7 +603,7 @@
         <index>0xFF21</index>
         <subindex>4</subindex>
         <size>4</size>
-        <value>1799</value>
+        <value>2538</value>
     </param>
     <param name="AnalogHybrid_Gain_num">
         <index>0xFF21</index>
@@ -621,7 +621,7 @@
         <index>0xFF21</index>
         <subindex>7</subindex>
         <size>4</size>
-        <value>28039</value>
+        <value>28437</value>
     </param>
     <param name="Hybrid_n_turns">
         <index>0xFF21</index>
@@ -752,7 +752,7 @@
         <index>0xFF3C</index>
         <subindex>4</subindex>
         <size>2</size>
-        <value>10</value>
+        <value>0</value>
     </param>
     <param name="Position Velocity Kc 0">
         <index>0xFF3C</index>
@@ -860,7 +860,7 @@
         <index>0xFF42</index>
         <subindex>5</subindex>
         <size>2</size>
-        <value>10</value>
+        <value>0</value>
     </param>
     <param name="Velocity Control Kc 0">
         <index>0xFF42</index>
@@ -964,9 +964,9 @@
         <index>0xFF4D</index>
         <subindex>1</subindex>
         <size>1</size>
-        <value>1</value>
+        <value>0</value>
     </param>
-        <param name="New redundancy window">
+    <param name="New redundancy window">
         <index>0xFF4D</index>
         <subindex>2</subindex>
         <size>4</size>
@@ -1015,32 +1015,29 @@
         <size>1</size>
         <value>3</value>
     </param>
-
-
-<!--- Interpoled Profile
+    <!--- Interpoled Profile
 	->  Interpoled Position Control PID     0xFF53	
 	->  Interpoled Velocity Control PID	0xFF54-->
-
-<!--- Interpoled Position Control PID -->
-   <param name="Interpoled Position Kp">
+    <!--- Interpoled Position Control PID -->
+    <param name="Interpoled Position Kp">
         <index>0xFF53</index>
         <subindex>1</subindex>
-        <size>2</size>        
+        <size>2</size>
         <value>40000</value>
     </param>
-   <param name="Interpoled Position Ki">
+    <param name="Interpoled Position Ki">
         <index>0xFF53</index>
         <subindex>2</subindex>
         <size>2</size>
         <value>0</value>
     </param>
-   <param name="Interpoled Position Kd">
+    <param name="Interpoled Position Kd">
         <index>0xFF53</index>
         <subindex>3</subindex>
         <size>2</size>
         <value>0</value>
     </param>
-   <param name="Interpoled Position Kc">
+    <param name="Interpoled Position Kc">
         <index>0xFF53</index>
         <subindex>4</subindex>
         <size>2</size>
@@ -1052,28 +1049,26 @@
         <size>2</size>
         <value>1000</value>
     </param>
-
-
-<!--- Interpoled Velocity Control PID -->
-   <param name="Interpoled Velocity Kp">
+    <!--- Interpoled Velocity Control PID -->
+    <param name="Interpoled Velocity Kp">
         <index>0xFF54</index>
         <subindex>1</subindex>
-        <size>2</size>        
+        <size>2</size>
         <value>250</value>
     </param>
-   <param name="Interpoled Velocity Ki">
+    <param name="Interpoled Velocity Ki">
         <index>0xFF54</index>
         <subindex>2</subindex>
         <size>2</size>
         <value>3000</value>
     </param>
-   <param name="Interpoled Velocity Kd">
+    <param name="Interpoled Velocity Kd">
         <index>0xFF54</index>
         <subindex>3</subindex>
         <size>2</size>
         <value>10</value>
     </param>
-   <param name="Interpoled Velocity Kc">
+    <param name="Interpoled Velocity Kc">
         <index>0xFF54</index>
         <subindex>4</subindex>
         <size>2</size>
@@ -1085,5 +1080,4 @@
         <size>2</size>
         <value>1000</value>
     </param>
-
 </Configuration>

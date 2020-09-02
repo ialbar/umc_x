@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Configuration>
     <Configuration_Management>
-        <Revision>13.1.0</Revision>
-        <Revision_Date>2019/09/04 10:00:00</Revision_Date>
-        <Last_modification>2019/09/04 10:00:00</Last_modification>
+        <Revision>15.0.0</Revision>
+        <Revision_Date>2020/02/24 8:00:00</Revision_Date>
+        <Last_modification>2020/02/24 8:00:00</Last_modification>
     </Configuration_Management>
     <param name="Power board">
         <index>0x2230</index>
@@ -15,43 +15,43 @@
         <index>0x608A</index>
         <subindex>0</subindex>
         <size>1</size>
-        <value>65</value>
+        <value>1</value>
     </param>
     <param name="Position notation index">
         <index>0x6089</index>
         <subindex>0</subindex>
         <size>1</size>
-        <value>-1</value>
+        <value>-4</value>
     </param>
     <param name="Velocity notation index">
         <index>0x608B</index>
         <subindex>0</subindex>
         <size>1</size>
-        <value>-1</value>
+        <value>-4</value>
     </param>
     <param name="Acceleration notation index">
         <index>0x608D</index>
         <subindex>0</subindex>
         <size>1</size>
-        <value>-1</value>
+        <value>-4</value>
     </param>
     <param name="Gear ratio numerator">
         <index>0x6091</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>20833</value>
+        <value>100</value>
     </param>
     <param name="Gear ratio divisor">
         <index>0x6091</index>
         <subindex>2</subindex>
         <size>4</size>
-        <value>100</value>
+        <value>3</value>
     </param>
     <param name="Feed constant numerator">
         <index>0x6092</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>0</value>
+        <value>3195</value>
     </param>
     <param name="Feed constant divisor">
         <index>0x6092</index>
@@ -59,35 +59,35 @@
         <size>4</size>
         <value>1</value>
     </param>
-   <param name="Max profile velocity">
+    <param name="Max profile velocity">
         <index>0x607F</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>309</value>
+        <value>5000</value>
     </param>
     <param name="Max acceleration">
         <index>0x60C5</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>900</value>
+        <value>5000</value>
     </param>
     <param name="Max deceleration">
         <index>0x60C6</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>3000</value>
+        <value>5000</value>
     </param>
     <param name="Profile velocity">
         <index>0x6081</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>300</value>
+        <value>3000</value>
     </param>
     <param name="Profile acceleration">
         <index>0x6083</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>900</value>
+        <value>3000</value>
     </param>
     <param name="Profile deceleration">
         <index>0x6084</index>
@@ -99,15 +99,15 @@
         <index>0x6085</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>600</value>
+        <value>4000</value>
     </param>
     <param name="Quick stop option">
         <index>0x605A</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>-1</value>
-    <param name="Home offset">
+        <value>2</value>
     </param>
+    <param name="Home offset">
         <index>0x607C</index>
         <subindex>0</subindex>
         <size>4</size>
@@ -117,55 +117,55 @@
         <index>0x607D</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>-200</value>
+        <value>0</value>
     </param>
     <param name="Software position limit Max">
         <index>0x607D</index>
         <subindex>2</subindex>
         <size>4</size>
-        <value>900</value>
+        <value>21078</value>
     </param>
     <param name="Outofbound_position_limit_min">
         <index>0xFF30</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>-200</value>
+        <value>-1000</value>
     </param>
     <param name="Outofbound_position_limit_max">
         <index>0xFF30</index>
         <subindex>2</subindex>
         <size>4</size>
-        <value>900</value>
+        <value>21178</value>
     </param>
     <param name="Max motor speed">
         <index>0x6080</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>3630</value>
+        <value>5800</value>
     </param>
     <param name="Motor rated current">
         <index>0x6075</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>2240</value>
+        <value>8500</value>
     </param>
     <param name="Max current 1000 factor">
         <index>0x6073</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>4464</value>
+        <value>1176</value>
     </param>
     <param name="Max acceleration current 1000 factor">
         <index>0x200B</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>4464</value>
+        <value>1176</value>
     </param>
     <param name="Position following error window">
         <index>0x6065</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>1500000</value>
+        <value>3000</value>
     </param>
     <param name="Position following error timeout">
         <index>0x6066</index>
@@ -177,49 +177,49 @@
         <index>0x6067</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>1</value>
+        <value>10</value>
     </param>
     <param name="Position window time">
         <index>0x6068</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>1</value>
+        <value>50</value>
     </param>
     <param name="Velocity window">
         <index>0x606D</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>20</value>
+        <value>200</value>
     </param>
     <param name="Velocity window time">
         <index>0x606E</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>50</value>
+        <value>100</value>
     </param>
     <param name="Velocity threshold">
         <index>0x606F</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>100</value>
+        <value>1000</value>
     </param>
     <param name="Velocity threshold time">
         <index>0x6070</index>
         <subindex>0</subindex>
         <size>2</size>
-        <value>100</value>
+        <value>250</value>
     </param>
     <param name="Velocity max slippage">
         <index>0x60F8</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>300</value>
+        <value>3000</value>
     </param>
     <param name="AN1 gain numerator">
         <index>0x2203</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>311</value>
+        <value>14619</value>
     </param>
     <param name="AN1 gain divisor">
         <index>0x2203</index>
@@ -231,13 +231,13 @@
         <index>0x2203</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>-221</value>
+        <value>-17997</value>
     </param>
     <param name="AN2 gain numerator">
         <index>0x2204</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>1</value>
+        <value>0</value>
     </param>
     <param name="AN2 gain divisor">
         <index>0x2204</index>
@@ -273,7 +273,7 @@
         <index>0x2208</index>
         <subindex>1</subindex>
         <size>1</size>
-        <value>1</value>
+        <value>0</value>
     </param>
     <param name="Encoder 1 Error Reset">
         <index>0x2208</index>
@@ -321,7 +321,7 @@
         <index>0x2221</index>
         <subindex>1</subindex>
         <size>1</size>
-        <value>3</value>
+        <value>10</value>
     </param>
     <param name="Position sensor place">
         <index>0x2221</index>
@@ -333,7 +333,7 @@
         <index>0x2222</index>
         <subindex>1</subindex>
         <size>1</size>
-        <value>3</value>
+        <value>10</value>
     </param>
     <param name="Absolute position sensor place">
         <index>0x2222</index>
@@ -363,7 +363,7 @@
         <index>0x2009</index>
         <subindex>0</subindex>
         <size>1</size>
-        <value>1</value>
+        <value>3</value>
     </param>
     <param name="DC motor polarity">
         <index>0x200A</index>
@@ -474,7 +474,7 @@
         <value>0</value>
     </param>
     <param name="Quick stop ramp time">
-        <index>0x6085</index>todo
+        <index>0x6085</index>
         <subindex>3</subindex>
         <size>4</size>
         <value>500</value>
@@ -483,7 +483,7 @@
         <index>0x6085</index>
         <subindex>4</subindex>
         <size>2</size>
-        <value>500</value>
+        <value>50</value>
     </param>
     <param name="GPI polarity">
         <index>0x2201</index>
@@ -497,47 +497,29 @@
         <size>1</size>
         <value>207</value>
     </param>
-    <param name="Detent position 1">
-        <index>0x2110</index>
-        <subindex>1</subindex>
-        <size>4</size>
-        <value>0</value>
-    </param>
-    <param name="Detent position 2">
-        <index>0x2110</index>
-        <subindex>2</subindex>
-        <size>4</size>
-        <value>0</value>
-    </param>
-    <param name="Detent position 3">
-        <index>0x2110</index>
-        <subindex>3</subindex>
-        <size>4</size>
-        <value>0</value>
-    </param>
-    <param name="Detent distance">
+    <param name="Detent enable">
         <index>0x2111</index>
-        <subindex>4</subindex>
-        <size>4</size>
+        <subindex>1</subindex>
+        <size>2</size>
         <value>0</value>
     </param>
     <param name="Detent skip speed">
         <index>0x2111</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>0</value>
+        <value>4000</value>
     </param>
-    <param name="Detent PWM">
+    <param name="Detent distance">
         <index>0x2111</index>
-        <subindex>5</subindex>
-        <size>2</size>
-        <value>0</value>
+        <subindex>4</subindex>
+        <size>4</size>
+        <value>10</value>
     </param>
-    <param name="Detent enable">
+    <param name="Detent skip distance">
         <index>0x2111</index>
-        <subindex>1</subindex>
-        <size>2</size>
-        <value>0</value>
+        <subindex>7</subindex>
+        <size>4</size>
+        <value>100</value>
     </param>
     <param name="FPGA LSB Heartbeat">
         <index>0xFF17</index>
@@ -585,7 +567,7 @@
         <index>0xFF21</index>
         <subindex>2</subindex>
         <size>1</size>
-        <value>1</value>
+        <value>0</value>
     </param>
     <param name="Pot_Polarity">
         <index>0xFF21</index>
@@ -597,13 +579,13 @@
         <index>0xFF21</index>
         <subindex>4</subindex>
         <size>4</size>
-        <value>0</value>
+        <value>1069</value>
     </param>
     <param name="AnalogHybrid_Gain_num">
         <index>0xFF21</index>
         <subindex>5</subindex>
         <size>2</size>
-        <value>512</value>
+        <value>4883</value>
     </param>
     <param name="AnalogHybrid_Gain_div">
         <index>0xFF21</index>
@@ -615,13 +597,13 @@
         <index>0xFF21</index>
         <subindex>7</subindex>
         <size>4</size>
-        <value>0</value>
+        <value>36959</value>
     </param>
     <param name="Hybrid_n_turns">
         <index>0xFF21</index>
         <subindex>8</subindex>
         <size>1</size>
-        <value>3</value>
+        <value>30</value>
     </param>
     <param name="Hybrid_analog_sel">
         <index>0xFF21</index>
@@ -633,7 +615,187 @@
         <index>0xFF21</index>
         <subindex>11</subindex>
         <size>2</size>
-        <value>60</value>
+        <value>500</value>
+    </param>
+    <param name="VECT_CURR_CONTROL_Kp">
+        <index>0xFF06</index>
+        <subindex>1</subindex>
+        <size>4</size>
+        <value>125</value>
+    </param>
+    <param name="VECT_CURR_CONTROL_Ki">
+        <index>0xFF06</index>
+        <subindex>2</subindex>
+        <size>4</size>
+        <value>8</value>
+    </param>
+    <param name="VECT_CURR_CONTROL_Kc">
+        <index>0xFF06</index>
+        <subindex>3</subindex>
+        <size>4</size>
+        <value>0</value>
+    </param>
+    <param name="VECT_CURR_CONTROL_Kff">
+        <index>0xFF06</index>
+        <subindex>4</subindex>
+        <size>4</size>
+        <value>0</value>
+    </param>
+    <param name="VECT_CURR_CONTROL_PARAM_DIV">
+        <index>0xFF06</index>
+        <subindex>5</subindex>
+        <size>4</size>
+        <value>1000</value>
+    </param>
+    <param name="UPDATE_VECT_CURR_CONTROL_REFS">
+        <index>0xFF06</index>
+        <subindex>10</subindex>
+        <size>1</size>
+        <value>1</value>
+    </param>
+    <param name="Assisted_mode_current_demand">
+        <index>0x2120</index>
+        <subindex>1</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Assisted_mode_conf_Analog_input">
+        <index>0x2120</index>
+        <subindex>2</subindex>
+        <size>1</size>
+        <value>0</value>
+    </param>
+    <param name="Assisted_mode_conf_Center">
+        <index>0x2120</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Assisted_mode_conf_Threshold">
+        <index>0x2120</index>
+        <subindex>4</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Assisted_mode_conf_Window_time">
+        <index>0x2120</index>
+        <subindex>5</subindex>
+        <size>2</size>
+        <value>1</value>
+    </param>
+    <param name="Assisted_mode_conf_Gain_numerator">
+        <index>0x2120</index>
+        <subindex>6</subindex>
+        <size>2</size>
+        <value>1</value>
+    </param>
+    <param name="Assisted_mode_conf_Gain_divisor">
+        <index>0x2120</index>
+        <subindex>7</subindex>
+        <size>2</size>
+        <value>1</value>
+    </param>
+    <param name="Assisted_mode_conf_Max_velocity">
+        <index>0x2120</index>
+        <subindex>8</subindex>
+        <size>4</size>
+        <value>3500</value>
+    </param>
+    <param name="Assisted_mode_conf_Kp">
+        <index>0x2120</index>
+        <subindex>9</subindex>
+        <size>2</size>
+        <value>95</value>
+    </param>
+    <param name="Assisted_mode_conf_Ki">
+        <index>0x2120</index>
+        <subindex>10</subindex>
+        <size>2</size>
+        <value>110</value>
+    </param>
+    <param name="Assisted_mode_conf_Kc">
+        <index>0x2120</index>
+        <subindex>11</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Assisted_mode_conf_control_parameter_Divisor">
+        <index>0x2120</index>
+        <subindex>12</subindex>
+        <size>2</size>
+        <value>100</value>
+    </param>
+    <param name="Assisted_mode_conf_filter">
+        <index>0x2120</index>
+        <subindex>13</subindex>
+        <size>1</size>
+        <value>0</value>
+    </param>
+    <param name="Assisted_mode_conf_ramp">
+        <index>0x2120</index>
+        <subindex>14</subindex>
+        <size>2</size>
+        <value>25</value>
+    </param>
+    <param name="Assisted_mode_control_margin">
+        <index>0x2120</index>
+        <subindex>15</subindex>
+        <size>2</size>
+        <value>500</value>
+    </param>
+    <param name="Assisted_mode_pos_Kp">
+        <index>0xFF29</index>
+        <subindex>1</subindex>
+        <size>2</size>
+        <value>200</value>
+    </param>
+    <param name="Assisted_mode_pos_Ki">
+        <index>0xFF29</index>
+        <subindex>2</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Assisted_mode_pos_Kd">
+        <index>0xFF29</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>3500</value>
+    </param>
+    <param name="Assisted_mode_pos_Kc">
+        <index>0xFF29</index>
+        <subindex>4</subindex>
+        <size>2</size>
+        <value>1500</value>
+    </param>
+    <param name="Assisted_mode_pos_Kff">
+        <index>0xFF29</index>
+        <subindex>5</subindex>
+        <size>2</size>
+        <value>10</value>
+    </param>
+    <param name="Assisted_mode_pos_control_parameter_Divisor">
+        <index>0xFF29</index>
+        <subindex>6</subindex>
+        <size>2</size>
+        <value>1000</value>
+    </param>
+    <param name="Assisted_mode_debug_velocity">
+        <index>0xFF29</index>
+        <subindex>8</subindex>
+        <size>4</size>
+        <value>20000</value>
+    </param>
+    <param name="Assisted_mode_detent_active">
+        <index>0xFF29</index>
+        <subindex>9</subindex>
+        <size>1</size>
+        <value>0</value>
+    </param>
+    <param name="Assisted_mode_error_filter">
+        <index>0xFF29</index>
+        <subindex>10</subindex>
+        <size>1</size>
+        <value>0</value>
     </param>
     <param name="Debug_SCI_mode">
         <index>0xFF33</index>
@@ -645,51 +807,51 @@
         <index>0xFF35</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>1500</value>
+        <value>750</value>
     </param>
- <param name="Max demand velocity">
+    <param name="Max demand velocity">
         <index>0xFF40</index>
         <subindex>1</subindex>
         <size>4</size>
-        <value>309</value>
-        <!--103% = 309-->
+        <value>6000</value>
+        <!--103% = 3090-->
     </param>
-<!--- Position Profile
+    <!--- Position Profile
 	->  Position PID (default) 		0x60FB
 	->  Position Control PID		0xFF3A	
 	->  Position Velocity Control PID	0xFF3C
 	->  Position Current Control PID	0xFF3E
 -->
-<!--- Position PID -->
+    <!--- Position PID -->
     <param name="Position Kp">
         <index>0x60FB</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>1200</value>
+        <value>23000</value>
     </param>
     <param name="Position Ki">
         <index>0x60FB</index>
         <subindex>2</subindex>
         <size>2</size>
-        <value>120</value>
+        <value>3000</value>
     </param>
     <param name="Position Kd">
         <index>0x60FB</index>
         <subindex>3</subindex>
         <size>2</size>
-        <value>45</value>
+        <value>3</value>
     </param>
     <param name="Position Kc">
         <index>0x60FB</index>
         <subindex>4</subindex>
         <size>2</size>
-        <value>750</value>
+        <value>0</value>
     </param>
     <param name="Position control parameter divisor">
         <index>0x60FB</index>
         <subindex>5</subindex>
         <size>2</size>
-        <value>100</value>
+        <value>1000</value>
     </param>
     <param name="Position control margin">
         <index>0x2007</index>
@@ -697,14 +859,13 @@
         <size>4</size>
         <value>250</value>
     </param>
-<!--- Position PID -->
-
-<!--- Position Control PID -->
+    <!--- Position PID -->
+    <!--- Position Control PID -->
     <param name="Position Kp 0">
         <index>0xFF3A</index>
         <subindex>2</subindex>
         <size>2</size>
-        <value>5000</value>
+        <value>8000</value>
     </param>
     <param name="Position Ki 0">
         <index>0xFF3A</index>
@@ -728,7 +889,7 @@
         <index>0xFF3A</index>
         <subindex>7</subindex>
         <size>2</size>
-        <value>1000</value>
+        <value>250</value>
     </param>
     <param name="Position control parameter divisor 0">
         <index>0xFF3A</index>
@@ -736,32 +897,31 @@
         <size>2</size>
         <value>1000</value>
     </param>
-<!--- Position Control PID -->
-
-<!--- Position Velocity PID -->
+    <!--- Position Control PID -->
+    <!--- Position Velocity PID -->
     <param name="Position Velocity Kp 0">
         <index>0xFF3C</index>
         <subindex>2</subindex>
         <size>2</size>
-        <value>2000</value>
+        <value>12000</value>
     </param>
-    <param name="Position Velocity Ki 0">
+    <param name="Position Velocity Ki 0"> 
         <index>0xFF3C</index>
         <subindex>3</subindex>
         <size>2</size>
-        <value>65000</value>
+        <value>6000</value>
     </param>
     <param name="Position Velocity Kd 0">
         <index>0xFF3C</index>
         <subindex>4</subindex>
         <size>2</size>
-        <value>10</value> <!--- 10 -->
+        <value>50</value>
     </param>
     <param name="Position Velocity Kc 0">
         <index>0xFF3C</index>
         <subindex>5</subindex>
         <size>2</size>
-        <value>0</value>
+        <value>2000</value>
     </param>
     <param name="Position Velocity control parameter divisor 0">
         <index>0xFF3C</index>
@@ -769,20 +929,19 @@
         <size>2</size>
         <value>1000</value>
     </param>
-<!--- Position Velocity PID -->
-
-<!--- Position Current Control PID -->
+    <!--- Position Velocity PID -->
+    <!--- Position Current Control PID -->
     <param name="Position Current Kp 0">
         <index>0xFF3E</index>
         <subindex>2</subindex>
-        <size>2</size>        
-        <value>1500</value>
+        <size>2</size>
+        <value>600</value>
     </param>
     <param name="Position Current Ki 0">
         <index>0xFF3E</index>
         <subindex>3</subindex>
         <size>2</size>
-        <value>130</value>
+        <value>20</value>
     </param>
     <param name="Position Current Kd 0">
         <index>0xFF3E</index>
@@ -802,27 +961,25 @@
         <size>2</size>
         <value>1000</value>
     </param>
-<!---Position Current Control PID -->
-
-<!--- Velocity Profile
+    <!---Position Current Control PID -->
+    <!--- Velocity Profile
 	->  Velocity PID (default) 		0x60F9
 	->  Velocity Detent PID	   		0xFF41	
 	->  Velocity Control PID		0xFF42	
 	->  Velocity Current Control PID	0xFF44
 -->
-
-<!--- Velocity PID -->
+    <!--- Velocity PID -->
     <param name="Velocity Kp">
         <index>0x60F9</index>
         <subindex>1</subindex>
         <size>2</size>
-        <value>10</value>
+        <value>30</value>
     </param>
     <param name="Velocity Ki">
         <index>0x60F9</index>
         <subindex>3</subindex>
         <size>2</size>
-        <value>90</value>
+        <value>1030</value>
     </param>
     <param name="Velocity Kd">
         <index>0x60F9</index>
@@ -834,39 +991,39 @@
         <index>0x60F9</index>
         <subindex>5</subindex>
         <size>2</size>
-        <value>0</value><!-- 23 -->
+        <value>0</value>
     </param>
     <param name="Velocity control parameter divisor">
         <index>0x60F9</index>
         <subindex>6</subindex>
         <size>2</size>
-        <value>1000</value>
+        <value>100</value>
     </param>
     <param name="Velocity control margin">
         <index>0x2006</index>
         <subindex>0</subindex>
         <size>4</size>
-        <value>1000</value>
+        <value>500</value>
     </param>
-<!--- Velocity PID -->
-<!--- Velocity Control PID -->
+    <!--- Velocity PID -->
+    <!--- Velocity Control PID -->
     <param name="Velocity Control Kp 0">
         <index>0xFF42</index>
         <subindex>2</subindex>
-        <size>2</size>        
-        <value>2000</value>
+        <size>2</size>
+        <value>19900</value>
     </param>
     <param name="Velocity Control Ki 0">
         <index>0xFF42</index>
         <subindex>4</subindex>
         <size>2</size>
-        <value>65000</value>
+        <value>100</value>
     </param>
     <param name="Velocity Control Kd 0">
         <index>0xFF42</index>
         <subindex>5</subindex>
         <size>2</size>
-        <value>10</value>
+        <value>0</value>
     </param>
     <param name="Velocity Control Kc 0">
         <index>0xFF42</index>
@@ -876,7 +1033,7 @@
     </param>
     <param name="Velocity control parameter divisor 0">
         <index>0xFF42</index>
-        <subindex>7</subindex>
+        <subindex>7</subindex> 
         <size>2</size>
         <value>1000</value>
     </param>
@@ -884,21 +1041,21 @@
         <index>0xFF42</index>
         <subindex>8</subindex>
         <size>2</size>
-        <value>1000</value>
+        <value>0</value>
     </param>
-<!--- Velocity Control PID -->
-<!--- Velocity Current PID -->
-   <param name="Velocity Current Kp 0">
+    <!--- Velocity Control PID -->
+    <!--- Velocity Current PID -->
+    <param name="Velocity Current Kp 0">
         <index>0xFF44</index>
         <subindex>2</subindex>
-        <size>2</size>        
-        <value>1500</value>
+        <size>2</size>
+        <value>600</value>
     </param>
     <param name="Velocity Current Ki 0">
         <index>0xFF44</index>
         <subindex>3</subindex>
         <size>2</size>
-        <value>130</value>
+        <value>20</value>
     </param>
     <param name="Velocity Current Kd 0">
         <index>0xFF44</index>
@@ -918,11 +1075,47 @@
         <size>2</size>
         <value>1000</value>
     </param>
-<!--- Velocity Current PID --> 
-<!--- Manual Detent PID -->
-<!--- Manual Detent PID -->
-<!--- Velocity Detent PID -->
-<!--- Velocity Detent PID -->
+    <!--- Velocity Current PID -->
+    <!--- Manual Detent PID -->
+    <!--- Manual Detent PID -->
+    <!--- Velocity Detent PID -->
+    <param name="Velocity Detent Kp">
+        <index>0xFF41</index>
+        <subindex>1</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Velocity Detent Ki">
+        <index>0xFF41</index>
+        <subindex>2</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Velocity Detent Kd">
+        <index>0xFF41</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Velocity Detent Kc">
+        <index>0xFF41</index>
+        <subindex>4</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Velocity Detent Kff">
+        <index>0xFF41</index>
+        <subindex>5</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Velocity Detent control parameter divisor">
+        <index>0xFF41</index>
+        <subindex>6</subindex>
+        <size>2</size>
+        <value>1000</value>
+    </param>
+    <!--- Velocity Detent PID -->
     <param name="Percent OverCurrent following error window">
         <index>0xFF45</index>
         <subindex>1</subindex>
@@ -934,25 +1127,56 @@
         <subindex>2</subindex>
         <size>2</size>
         <value>2000</value>
-    </param> 
+    </param>
+    <!--- Saturation Current PID -->
+    <param name="Maximum Current Saturation Percentage">
+        <index>0xFF46</index>
+        <subindex>1</subindex>
+        <size>2</size>
+        <value>100</value>
+    </param>
+    <param name="Minimum Current Saturation Percentage">
+        <index>0xFF46</index>
+        <subindex>2</subindex>
+        <size>2</size>
+        <value>100</value>
+    </param>
+    <param name="Maximum PWM Duty Saturation Percentage">
+        <index>0xFF46</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>72</value>
+    </param>
+    <param name="Maximum PWM Duty Saturation Percentage">
+        <index>0xFF46</index>
+        <subindex>4</subindex>
+        <size>2</size>
+        <value>72</value>
+    </param>
+    <param name="Control effort Current Debug">
+        <index>0xFF46</index>
+        <subindex>5</subindex>
+        <size>2</size>
+        <value>85</value>
+    </param>
     <!--- New redundancy -->
     <param name="New redundancy enable">
         <index>0xFF4D</index>
         <subindex>1</subindex>
         <size>1</size>
-        <value>0</value>
+        <value>1</value>
     </param>
-        <param name="New redundancy window">
+    <param name="New redundancy window">
         <index>0xFF4D</index>
         <subindex>2</subindex>
         <size>4</size>
-        <value>300</value>
+        <value>500</value>
     </param>
     <param name="New redundancy timeout">
         <index>0xFF4D</index>
         <subindex>3</subindex>
         <size>4</size>
-        <value>100</value>
+        <value>500</value>
     </param>
     <!--- Used for position -->
     <param name="AN1 used for position">
@@ -979,4 +1203,106 @@
         <size>1</size>
         <value>1</value>
     </param>
+    <param name="NCE used for position">
+        <index>0xFF4B</index>
+        <subindex>1</subindex>
+        <size>1</size>
+        <value>1</value>
+    </param>
+    <param name="NCE place">
+        <index>0xFF4B</index>
+        <subindex>3</subindex>
+        <size>1</size>
+        <value>3</value>
+    </param>
+
+<!--- Assisted Detent Profile
+	->  Assisted Detent Position Control PID     0xFF55	
+	->  Assisted Detent Velocity Control PID	0xFF56-->
+
+<!--- Assisted Detent Position Control PID -->
+   <param name="Assisted Detent Position Kp">
+        <index>0xFF55</index>
+        <subindex>1</subindex>
+        <size>2</size>        
+        <value>10000</value>
+    </param>
+   <param name="Assisted Detent Position Ki">
+        <index>0xFF55</index>
+        <subindex>2</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+   <param name="Assisted Detent Position Kd">
+        <index>0xFF55</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+   <param name="Assisted Detent Position Kc">
+        <index>0xFF55</index>
+        <subindex>4</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Assisted Detent Position control parameter divisor 0">
+        <index>0xFF55</index>
+        <subindex>5</subindex>
+        <size>2</size>
+        <value>1000</value>
+    </param>
+
+
+<!--- Assisted Detent Velocity Control PID -->
+   <param name="Assisted Detent Velocity Kp">
+        <index>0xFF56</index>
+        <subindex>1</subindex>
+        <size>2</size>        
+        <value>3500</value>
+    </param>
+   <param name="Assisted Detent Velocity Ki">
+        <index>0xFF56</index>
+        <subindex>2</subindex>
+        <size>2</size>
+        <value>1500</value>
+    </param>
+   <param name="Assisted Detent Velocity Kd">
+        <index>0xFF56</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+   <param name="Assisted Detent Velocity Kc">
+        <index>0xFF56</index>
+        <subindex>4</subindex>
+        <size>2</size>
+        <value>0</value>
+    </param>
+    <param name="Assisted Detent Position control parameter divisor 0">
+        <index>0xFF56</index>
+        <subindex>5</subindex>
+        <size>2</size>
+        <value>1000</value>
+    </param>
+
+<!--- Assisted Velocity Constant Control PID -->
+   <param name="Assisted Max Velocity">
+        <index>0xFF56</index>
+        <subindex>1</subindex>
+        <size>2</size>        
+        <value>6000</value>
+    </param>
+   <param name="Assisted Min Velocity">
+        <index>0xFF56</index>
+        <subindex>2</subindex>
+        <size>2</size>
+        <value>400</value>
+    </param>
+   <param name="Assisted Delta Gain Velocity">
+        <index>0xFF56</index>
+        <subindex>3</subindex>
+        <size>2</size>
+        <value>64</value>
+    </param>
+
 </Configuration>
